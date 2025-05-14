@@ -1,0 +1,23 @@
+<! doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+<script>
+function 伝言する() {
+  if (入力内容.value === "") {
+    alert("内容を入れてください");
+  } else {
+    伝言エリア.innerText = 入力内容.value;
+    alert("伝言をセットしました");
+    入力内容.value = "";
+  }
+}
+</script>
+</head>
+<body>
+<h1>伝言板</h1>
+<h3><p id="伝言エリア">メッセージはまだありません</p></h3>
+<p><a href="https://wata25.github.io/web/">マイホームページ</a></p>
+<input id="入力内容"><button onclick="伝言する();">セット</button>
+</body>
+</html>
